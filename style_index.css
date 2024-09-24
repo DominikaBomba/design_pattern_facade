@@ -1,0 +1,128 @@
+@font-face{
+    font-family: "font_header";
+    src: url(font_header2.otf);
+}
+body{
+    margin: 0;
+}
+/*header*/
+    #header{
+        
+        background-size: cover;
+        text-transform: uppercase;
+        padding: 5%;
+        width: 100%;
+        height: 70vh;
+        padding-top:7em; 
+        background: linear-gradient(132deg, #f6bf81, #f79490, #f6bf81, #f5e9dd);
+        background-size: 300% 100%;
+        animation: AnimationName 3s ease infinite;
+
+        position: fixed;
+    z-index: -1;
+    
+    }
+    @-webkit-keyframes AnimationName {
+        0%{background-position:74% 0%}
+        50%{background-position:27% 100%}
+        100%{background-position:74% 0%}
+    }
+    h1{
+        font-size:calc(6vh + 6vw);
+        margin: 0;
+        font-family: "font_header";
+        color: black;
+ 
+        
+    }
+    h2{
+    font-family: "font_header";
+        font-size: calc(3vh + 4vw);
+        margin-top: 0;
+        color: black;
+    }
+    /*button*/
+    #header button{
+        margin-top: 3%;
+        width: 15%;
+        height: 10%;
+        border-radius: 30px;
+        max-width: 200px;
+        min-width: 120px;
+        font-size: 120%;
+        border: 3px solid black;
+        background-color: rgba(0,0,0, .01) ;
+        color: black;
+        transition: all 0.3s linear;
+    }
+    #header button:hover{
+        background-color: rgba(100,100,100, .35) ;
+        width: 17%;
+        height: 11%;
+        
+    }
+    #header button:hover a{
+        
+    
+        font-size: 100%;
+    }
+    #header button>a{
+        text-decoration: none;
+        color: black;
+        font-family: font_article;
+        font-weight: 700;
+        transition: all 0.3s linear;
+        
+    }
+/*background image and the animation*/
+    #header img{
+        width: 10vh;
+        animation: spin 6s linear reverse infinite;
+        
+    }
+
+    @keyframes spin{
+        0%{
+            transform: rotate(-10deg);
+        }
+        50%{
+            transform: rotate(30deg);
+        }
+    }
+/*section*/
+    section{
+        height: 100vh;
+        background-color: rgb(0,0,0,0.5);
+        position: absolute;
+        top: 85vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+/*tutoriale*/
+    #filmiki{
+        
+        width: 50%;
+    }
+    video{
+        width: 100%;
+    }
+/*przyciski*/
+#przyciski{
+    margin-top: 5%;
+    height: 20%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
+}
+#przyciski>button{
+    border: 2px solid black;
+    padding: 5%;
+    width: 10%;
+}
