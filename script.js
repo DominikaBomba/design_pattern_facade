@@ -13,12 +13,14 @@ console.log("aaa");
 					//left arrow
 					let left_arrow = document.createElement("button");
 					left_arrow.setAttribute("id", "left_arrow");
+                    left_arrow.innerHTML = "Poprzedni";
 					//image
 					let current_video = document.createElement("source");
 					current_video.setAttribute("src", this.tutorials[0]);
 					//right arrow
 					let right_arrow= document.createElement("button");
 					right_arrow.setAttribute("id", "right_arrow");
+                    right_arrow.innerHTML = "Następny";
 					
 					//adding elements to slider
 					
